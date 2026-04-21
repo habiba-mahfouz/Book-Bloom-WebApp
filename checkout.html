@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Checkout - Book Bloom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div class="check-out">
+      <header class="header">
+        <div class="header-left">
+          <a href="../MainMenu/MainMenu.html"><button class="home-btn" aria-label="Home">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#001356" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </button></a>
+          <span class="logo-text">Book Bloom</span>
+        </div>
+
+        <div class="header-center">
+          <h1 class="page-title-header">CHECKOUT</h1>
+        </div>
+
+        <div class="header-right">
+          <a href="../userprofile/userprofile.html"><button class="profile-btn" id="headerProfileBtn" aria-label="Profile">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#001356" stroke-width="2">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
+            </svg>
+          </button></a>
+        </div>
+      </header>
+      
+      <main class="content-wrapper">
+        <div class="checkout-card">
+          <h1 class="page-title">Checkout</h1>
+          
+          <form class="checkout-form" aria-label="Checkout form">
+            <div class="name-fields">
+              <input type="text" placeholder="First Name" class="input-field" aria-label="First Name" />
+              <input type="text" placeholder="Last Name" class="input-field" aria-label="Last Name" />
+            </div>
+            
+            <input type="text" placeholder="Address" class="input-field input-full" aria-label="Address" />
+            
+            <fieldset class="payment-section">
+              <legend class="section-title">Payment</legend>
+              
+              <div class="payment-option">
+                <input type="radio" id="credit-card" name="payment-method" value="credit-card" class="payment-radio" checked />
+                <label for="credit-card" class="payment-label">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10" stroke="white" stroke-width="1"/>
+                  </svg>
+                  <span>Credit Card</span>
+                </label>
+              </div>
+              <input type="text" placeholder="Card Number" class="input-field input-full card-input" id="card-number" inputmode="numeric" />
+              
+              <div class="payment-option">
+                <input type="radio" id="cash-delivery" name="payment-method" value="cash" class="payment-radio" />
+                <label for="cash-delivery" class="payment-label">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="2" y="7" width="20" height="10" rx="2"/>
+                    <circle cx="12" cy="12" r="2" fill="white"/>
+                  </svg>
+                  <span>Cash on delivery</span>
+                </label>
+              </div>
+            </fieldset>
+            
+          
+          </form>
+          <button type="button" class="confirm-button">Confirm</button>
+        </div>
+      </main>
+
+      <!-- Custom Confirmation Modal -->
+      <div id="orderModal" class="modal-overlay">
+          <div class="modal-card">
+              <div class="modal-header">
+                  <span id="modalOrderNumber">Order: #1</span>
+              </div>
+              <div class="modal-body">
+                  <div id="modalDetails" class="modal-details">
+                      <!-- Details will be injected by JS -->
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button id="modalCancelBtn" class="modal-btn cancel">Cancel</button>
+                  <button id="modalConfirmBtn" class="modal-btn confirm">Confirm</button>
+              </div>
+          </div>
+      </div>
+
+    <script src="../CommonProfile.js"></script>
+    <script src="checkout.js"></script>
+  </body>
+</html>
