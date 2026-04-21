@@ -1,6 +1,7 @@
 # 📚 Book Bloom - Online Bookstore
 
 **Book Bloom** is a comprehensive, full-stack E-Commerce web application designed for an online bookstore. It features a responsive user interface with dedicated user and employee dashboards, along with an integrated Node.js backend.
+<img width="1859" height="870" alt="Screenshot 2026-04-21 080938" src="https://github.com/user-attachments/assets/cf1667de-caec-4436-9e86-19177ea27401" />
 
 ## ✨ Features
 - **User Authentication:** Secure Login and Signup functionality.
