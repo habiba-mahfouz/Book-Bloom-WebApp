@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Bloom - Categories</title>
+  <link rel="stylesheet" href="MainMenu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="content-wrapper">
+      <header class="header">
+        <div class="header__logo">Book Bloom</div>
+        <nav class="header__nav"></nav>
+        <div class="header-center">
+          <h1 class="page-title">CATEGORIES</h1>
+        </div>
+        <div class="header-icons">
+          <a href="../shoppingcart/shoppingcart.html">
+            <button class="icon-btn cart-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#001356" stroke-width="2">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </button>
+          </a>
+          <a href="../userprofile/userprofile.html">
+            <button class="icon-btn profile-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#001356" stroke-width="2">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </header>
+
+
+
+      <aside class="sidebar">
+        <div class="sidebar__category sidebar__category--space">
+          <img class="sidebar__category-image" src="./img/Space.jpeg">
+        </div>
+        <div class="sidebar__label sidebar__label--space">
+          <span class="sidebar__label-text">Space</span>
+        </div>
+
+        <div class="sidebar__category sidebar__category--history">
+          <img class="sidebar__category-image" src="./img/History.jpeg">
+        </div>
+        <div class="sidebar__label sidebar__label--history">
+          <span class="sidebar__label-text">History</span>
+        </div>
+
+        <div class="sidebar__category sidebar__category--programming">
+          <img class="sidebar__category-image" src="./img/Programming.jpeg">
+        </div>
+        <div class="sidebar__label sidebar__label--programming">
+          <span class="sidebar__label-text">Programming</span>
+        </div>
+      </aside>
+
+      <section class="book-grid">
+
+        <!-- Book 1 -->
+        <article class="book-card book-card--1">
+          <div class="book-card__frame">
+            <img src="./img/Lost In Space.jpeg">
+          </div>
+
+          <div class="book-card__price">$12.30</div>
+
+          <div class="book-actions">
+
+            <div class="book-action add-to-cart" data-title="Lost In Space" data-price="12.30"
+              data-img="./img/Lost In Space.jpeg">
+              <div class="book-action__bg"></div>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="book-action book-action--cart">
+              <a href="../LostInSpace/LostInSpace.html"><i class="far fa-eye"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 2 -->
+        <article class="book-card book-card--2">
+          <div class="book-card__frame">
+            <img src="./img/Space_.jpeg">
+          </div>
+
+          <div class="book-card__price">$45.90</div>
+
+          <div class="book-actions">
+
+            <div class="book-action add-to-cart" data-title="Space" data-price="45.90" data-img="./img/Space_.jpeg">
+              <div class="book-action__bg"></div>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="book-action book-action--cart">
+              <a href="../Space/Space.html"><i class="far fa-eye"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 3 -->
+        <article class="book-card book-card--3">
+          <div class="book-card__frame">
+            <img src="./img/Tales Of Space.jpeg">
+          </div>
+
+          <div class="book-card__price">$39.99</div>
+
+          <div class="book-actions">
+
+            <div class="book-action add-to-cart" data-title="Tales Of Space" data-price="39.99"
+              data-img="./img/Tales Of Space.jpeg">
+              <div class="book-action__bg"></div>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="book-action book-action--cart">
+              <a href="../TalesOfSpace/TalesOfSpace.html"><i class="far fa-eye"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 4 -->
+        <article class="book-card book-card--4">
+          <div class="book-card__frame">
+            <img src="./img/World History.jpeg">
+          </div>
+
+          <div class="book-card__price">$24.50</div>
+
+          <div class="book-actions">
+
+            <div class="book-action add-to-cart" data-title="World History" data-price="24.50"
+              data-img="./img/World History.jpeg">
+              <div class="book-action__bg"></div>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="book-action book-action--cart">
+              <a href="../WorldHistory/WorldHistory.html"><i class="far fa-eye"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 5 -->
+        <article class="book-card book-card--5">
+          <div class="book-card__frame">
+            <img src="./img/Valley Of Kings.jpeg">
+          </div>
+
+          <div class="book-card__price">$25.99</div>
+
+          <div class="book-actions">
+
+            <div class="book-action add-to-cart" data-title="Valley Of Kings" data-price="25.99"
+              data-img="./img/Valley Of Kings.jpeg">
+              <div class="book-action__bg"></div>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="book-action book-action--cart">
+              <a href="../ValleyOfKings/ValleyOfKings.html"><i class="far fa-eye"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 6 -->
+        <article class="book-card book-card--6">
+          <div class="book-card__frame">
+            <img src="./img/Time.jpeg">
+          </div>
+
+          <div class="book-card__price">$29.70</div>
+
+          <div class="book-actions">
+
+            <div class="book-action add-to-cart" data-title="Time" data-price="29.70" data-img="./img/Time.jpeg">
+              <div class="book-action__bg"></div>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="book-action book-action--cart">
+              <a href="../Time/Time.html"><i class="far fa-eye"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 7 -->
+        <article class="book-card book-card--7">
+          <div class="book-card__frame">
+            <img src="./img/Python.jpeg">
+          </div>
+
+          <div class="book-card__price">$40.99</div>
+
+          <div class="book-actions">
+
+            <div class="book-action add-to-cart" data-title="Python Programming" data-price="40.99"
+              data-img="./img/Python.jpeg">
+              <div class="book-action__bg"></div>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="book-action book-action--cart">
+              <a href="../PythonProgramming/PythonProgramming.html"><i class="far fa-eye"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 8 -->
+        <article class="book-card book-card--8">
+          <div class="book-card__frame">
+            <img src="./img/Computer Science.jpeg">
+          </div>
+
+          <div class="book-card__price">$35.30</div>
+
+          <div class="book-actions">
+
+            <div class="book-action add-to-cart" data-title="Computer Science" data-price="35.30"
+              data-img="./img/Computer Science.jpeg">
+              <div class="book-action__bg"></div>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="book-action book-action--cart">
+              <a href="../ComputerScience/ComputerScience.html"><i class="far fa-eye"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 9 -->
+        <article class="book-card book-card--9">
+          <div class="book-card__frame">
+            <img src="./img/Software Enigneer.jpeg">
+          </div>
+
+          <div class="book-card__price">$39.99</div>
+
+          <div class="book-actions">
+
+            <div class="book-action add-to-cart" data-title="Software Enigneer" data-price="39.99"
+              data-img="./img/Software Enigneer.jpeg">
+              <div class="book-action__bg"></div>
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
+            <div class="book-action book-action--cart">
+              <a href="../SoftwareEngineer/SoftwareEngineer.html"><i class="far fa-eye"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- LOGOUT BUTTON هنا -->
+      <div class="logout-section">
+        <a href="../login/login.html">
+          <button class="logOut-btn">
+            <span class="btn-text">Log Out</span>
+            <div class="btn-icon"></div>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="../CommonProfile.js"></script>
+    <script src="MainMenu.js"></script>
+</body>
+
+</html>
