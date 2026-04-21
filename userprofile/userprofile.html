@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Profile - Book Bloom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./userprofile.css" />
+</head>
+<body>
+  <div class="user-profile-page">
+    <header class="header">
+      <div class="header-left">
+        <a href="../MainMenu/MainMenu.html"><button class="home-btn" aria-label="Home">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#001356" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </button></a>
+        <span class="logo-text">Book Bloom</span>
+      </div>
+      
+      <div class="header-center">
+        <h1 class="page-title-header">PROFILE</h1>
+      </div>
+
+      <div class="header-right">
+        <a href="../OrderList/OrderList.html"><button class="icon-btn" aria-label="Orders">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#001356" stroke-width="2">
+            <line x1="8" y1="6" x2="21" y2="6"></line>
+            <line x1="8" y1="12" x2="21" y2="12"></line>
+            <line x1="8" y1="18" x2="21" y2="18"></line>
+            <path d="M3 6h.01M3 12h.01M3 18h.01"></path>
+          </svg>
+        </button></a>
+        <a href="../shoppingcart/shoppingcart.html"><button class="icon-btn" aria-label="Cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#001356" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </button></a>
+      </div>
+    </header>
+
+    <main class="profile-body">
+      <div class="profile-content">
+        <div class="profile-header">
+          <div class="profile-image-wrapper">
+            <img class="profile-image" src="./img/wallpaper 5.jpeg" alt="User profile photo" />
+          </div>
+          <div class="profile-info">
+            <h1 class="user-name" id="displayName"></h1>
+            <p class="user-detail" id="displayPhone">Phone: </p>
+            <p class="user-detail" id="displayEmail">Email: </p>
+          </div>
+        </div>
+
+        <div class="profile-stats">
+          <div class="stat-item">
+            <span class="stat-label"><strong>Settings</strong></span>
+            <span class="stat-arrow">›</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label"><strong>Help</strong></span>
+            <span class="stat-arrow">›</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label"><strong>Contact Us</strong></span>
+            <span class="stat-arrow">›</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="../CommonProfile.js"></script>
+  <script src="./userprofile.js"></script>
+</body>
+</html>
