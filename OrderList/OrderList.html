@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Bloom | Order List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="OrderList.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            
+            <a href="../MainMenu/MainMenu.html"><button class="home-btn" aria-label="Home">
+                <svg width="24" height="24" viewBox="0 0 24 24"
+                     fill="none" stroke="#001356" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </button></a>
+            <span class="logo-text">Book Bloom</span>
+        </div>
+
+        <div class="header-right">
+            <a href="../userprofile/userprofile.html"><button class="profile-btn" id="headerProfileBtn" aria-label="Profile">
+                <svg width="24" height="24" viewBox="0 0 24 24"
+                     fill="none" stroke="#001356" stroke-width="2">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
+                </svg>
+            </button></a>
+        </div>
+    </header>
+    
+    <div class="container">
+       
+        <div class="table-wrapper">
+            <table class="orders-table" id="ordersTable">
+                <thead>
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Date</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr class="empty-state">
+                        <td colspan="5">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"></path>
+                                <rect x="9" y="3" width="6" height="4" rx="1"></rect>
+                            </svg>
+                            <p>No orders yet</p>
+                            <small>Click "Add New Order" to create your first order</small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="../CommonProfile.js"></script>
+    <script src="OrderList.js"></script>
+</body>
+</html>
