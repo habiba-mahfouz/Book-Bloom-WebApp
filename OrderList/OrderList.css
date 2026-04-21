@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #F0DFC8;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+.header {
+    background: #001356;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: relative;
+    z-index: 100;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.back-btn,
+.home-btn {
+    width: 42px;
+    height: 42px;
+    background: #F0DFC8;
+    border: none;
+    color: #001356;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.home-btn:hover {
+    transform: scale(1.1);
+}
+
+.back-btn { /* for any back buttons if they exist */
+    width: 42px;
+    height: 42px;
+    background: #F0DFC8;
+    border: none;
+    color: #001356;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.logo-text {
+    color: #F0DFC8;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-btn {
+    width: 42px;
+    height: 42px;
+    background: #F0DFC8;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    overflow: hidden;
+    padding: 0;
+}
+
+.profile-btn:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 112px;
+    position: relative;
+    z-index: 10;
+}
+
+.add-btn {
+    background: #11256B;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 35px;
+    color: #F0DFC8;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-btn:hover {
+    background: #1a3589;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.table-wrapper {
+    background: #F0DFC8;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #001356;
+}
+
+.orders-table thead {
+    background: #11256B;
+}
+
+.orders-table th {
+    color: #F0DFC8;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 10px;
+    border-right: 1px solid #001356;
+}
+
+.orders-table th:last-child {
+    border-right: none;
+}
+
+.orders-table tbody tr {
+    border-bottom: 1px solid #001356;
+    transition: background 0.2s;
+    background: #F0DFC8;
+}
+
+.orders-table tbody tr:hover {
+    background: rgba(17, 37, 107, 0.05);
+}
+
+.orders-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.orders-table td {
+    color: #001356;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px 10px;
+    vertical-align: middle;
+    border-right: 1px solid #001356;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.orders-table td:last-child {
+    border-right: none;
+}
+
+.orders-table input[type="text"],
+.orders-table input[type="date"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #001356;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s;
+    background: #F0DFC8;
+    color: #001356;
+}
+
+.orders-table input[type="text"]:focus,
+.orders-table input[type="date"]:focus {
+    outline: none;
+    border-color: #11256B;
+    box-shadow: 0 0 0 3px rgba(17, 37, 107, 0.1);
+}
+
+.status-select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #001356;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #F0DFC8;
+    color: #001356;
+}
+
+.status-select:focus {
+    outline: none;
+    border-color: #11256B;
+    box-shadow: 0 0 0 3px rgba(17, 37, 107, 0.1);
+}
+
+.status-select.confirmed {
+    background: #11256B;
+    color: #F0DFC8;
+    border-color: #001356;
+    font-weight: 500;
+}
+
+.status-select.pending {
+    background: #F0DFC8;
+    color: #001356;
+    border-color: #001356;
+    font-weight: 500;
+}
+
+.delete-btn {
+    background: #001356;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: #F0DFC8;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    background: #11256B;
+    transform: scale(1.05);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #001356;
+}
+
+.empty-state svg {
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.empty-state p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.empty-state small {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    .search-bar {
+        width: 300px;
+    }
+
+    .add-btn {
+        font-size: 18px;
+        padding: 12px 28px;
+    }
+
+    .orders-table th {
+        font-size: 18px;
+        padding: 15px 10px;
+    }
+
+    .orders-table td {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        width: 250px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .orders-table {
+        min-width: 700px;
+    }
+
+    .orders-table th {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .orders-table td {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .orders-table input[type="text"],
+    .orders-table input[type="date"],
+    .status-select {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
