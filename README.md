@@ -49,3 +49,15 @@ If you'd like to test this project on your local machine, follow these steps:
 - `/shoppingcart` & `/OrderList` - Managing user orders.
 - `/MainMenu` & `/EmployeeMainMenu` - Hubs for navigating the app.
 - `/userprofile` & `/UserManage` - Client and Admin profile management.
+- `/document` - Pre-implementation design studies, containing PDFs of system analysis and software design.
+
+## 📄 Pre-Implementation Study & System Design
+
+To ensure a structured and well-analyzed implementation, a detailed system analysis and architectural study were conducted prior to writing the code. The documentation for this pre-implementation phase is located in the `/document` folder:
+- **`Software Phase 1-2.pdf`**: Outlines the project goals, functional requirements, scope (in-scope and out-of-scope), stakeholder definitions, and the choice of the Agile development model.
+- **`Software Phase 3.pdf`**: Contains technical diagrams mapping out system behaviors and data flows:
+  - **Data Flow Diagrams (DFD)** Level 0 and Level 1.
+  - **UML Sequence Diagrams** for key features: Employee Login/Book Management, Manager Login/Employee Management, and User Checkout/Payment flows.
+  - **Class Diagram** representing the Book Bloom Library architecture.
+  - **Use Case Diagram** mapping user, employee, and manager interactions.
+  - **Entity Relationship Diagram (ERD)** for the data model layout.
